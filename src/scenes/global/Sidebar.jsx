@@ -1,12 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import {
-  ProSidebarProvider,
-  Sidebar,
-  Menu,
-  MenuItem,
-  useProSidebar,
-} from "react-pro-sidebar";
+import { Sidebar, Menu, MenuItem, useProSidebar } from "react-pro-sidebar";
 // import "react-pro-sidebar/dist/css/styles.css";
 import { Box, IconButton, Typography, useTheme } from "@mui/material";
 // import { Link } from "react-router-dom";
@@ -62,17 +56,50 @@ const Sidebarr = () => {
               color: colors.grey[100],
             }}
           >
-            {!collapseSidebar && (
-              <Box>
+            {collapseSidebar && (
+              <Box
+                display="flex"
+                justifyContent="space-between"
+                alignItems="center"
+                ml="15"
+              >
                 <Typography variant="h3" color={colors.grey[100]}>
                   Admin
                 </Typography>
-                <IconButton>
+                <IconButton onClick={() => collapseSidebar()}>
                   <MenuOutlinedIcon />
                 </IconButton>
               </Box>
             )}
           </MenuItem>
+
+          {/* USER */}
+          {collapseSidebar && (
+            <Box mb="25px">
+              <Box display="flex" justifyContent="center" alignItems="center">
+                <img
+                  alt="user-image"
+                  width="100px"
+                  height="100px"
+                  src={"../../assets/user-img.jpg"}
+                  style={{ cursor: "pointer", borderRadius: "50%" }}
+                />
+              </Box>
+              <Box textAlign="center">
+                <Typography
+                  variant="h2"
+                  color={colors.grey[100]}
+                  fontWeight="bold"
+                  sx={{ m: "10px 0 0 0" }}
+                >
+                  Ed Back
+                </Typography>
+                <Typography variant="h5" color={colors.greenAccent[500]}>
+                  VP Admin
+                </Typography>
+              </Box>
+            </Box>
+          )}
         </Menu>
       </Sidebar>
     </Box>

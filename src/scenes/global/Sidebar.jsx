@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from "react";
+
 import { Sidebar, Menu, MenuItem, useProSidebar } from "react-pro-sidebar";
 // import "react-pro-sidebar/dist/css/styles.css";
 import { Box, IconButton, Typography, useTheme } from "@mui/material";
@@ -23,26 +23,33 @@ const Sidebarr = () => {
   const thene = useTheme();
   const colors = tokens(thene.palette.mode);
   const { collapseSidebar } = useProSidebar();
-  // const [isCollapsed, setIsCollapsed] = useState(false);
-  // const [selected, useSelected] = useState("Dashboard");
   return (
     <Box
       sx={{
-        "& .pro-sidebar-inner": {
+        "& .ps-sidebar-root": {
+          border: "none",
+        },
+        // "& .pro-sidebar-inner": {
+        //   background: `${colors.primary[400]} !important`,
+        // },
+        "& .ps-sidebar-container": {
           background: `${colors.primary[400]} !important`,
         },
-        "& .pro-icon-wrapper": {
-          backgroundColor: "transparent !important",
+        //   "& .pro-icon-wrapper": {
+        //backgroundColor: "transparent !important",
+        //   },
+        //   "& .pro-inner-item": {
+        //     padding: "5px 35px 5px 20px !important",
+        //   },
+        //   "& .pro-inner-item:hover": {
+        //     color: "#868dfb !important",
+        //   },
+        "& .ps-menu-button:hover": {
+          backgroundColor: "#868dfb !important",
         },
-        "& .pro-inner-item": {
-          padding: "5px 35px 5px 20px !important",
-        },
-        "& .pro-inner-item:hover": {
-          color: "#868dfb !important",
-        },
-        "& .pro-menu-item.active": {
-          color: "#6870fa !important",
-        },
+        //   "& .pro-menu-item.active": {
+        //     color: "#6870fa !important",
+        //   },
       }}
     >
       <Sidebar>
@@ -50,7 +57,7 @@ const Sidebarr = () => {
           {/* LOGO & MENU ICONS */}
           <MenuItem
             onClick={() => collapseSidebar()}
-            icon={collapseSidebar ? <MenuOutlinedIcon /> : undefined}
+            // icon={collapseSidebar ? <MenuOutlinedIcon /> : undefined}
             style={{
               margin: "10px 0 20px 0",
               color: colors.grey[100],
@@ -64,7 +71,7 @@ const Sidebarr = () => {
                 ml="15"
               >
                 <Typography variant="h3" color={colors.grey[100]}>
-                  Admin
+                  admin
                 </Typography>
                 <IconButton onClick={() => collapseSidebar()}>
                   <MenuOutlinedIcon />
@@ -92,7 +99,7 @@ const Sidebarr = () => {
                   fontWeight="bold"
                   sx={{ m: "10px 0 0 0" }}
                 >
-                  Ed Back
+                  Mr Cat
                 </Typography>
                 <Typography variant="h5" color={colors.greenAccent[500]}>
                   VP Admin

@@ -59,12 +59,20 @@ const Sidebarr = () => {
         //   "& .pro-inner-item": {
         //     padding: "5px 35px 5px 20px !important",
         //   },
+        "& .ps-menu-button": {
+          padding: "5px 35px 5px 20px !important",
+        },
         //   "& .pro-inner-item:hover": {
         //     color: "#868dfb !important",
         //   },
         "& .ps-menu-button:hover": {
-          backgroundColor: "#868dfb !important",
+          color: "#868dfb !important",
+          backgroundColor: "transparent !important",
         },
+        // "& .ps-menu-label:hover": {
+        //   color: "#868dfb !important",
+        //   backgroundColor: "transparent !important",
+        // },
         //   "& .pro-menu-item.active": {
         //     color: "#6870fa !important",
         //   },
@@ -89,7 +97,7 @@ const Sidebarr = () => {
                 ml="15px"
               >
                 <Typography variant="h3" color={colors.grey[100]}>
-                  admin
+                  catmin
                 </Typography>
                 <IconButton>
                   <MenuOutlinedIcon />
@@ -120,7 +128,7 @@ const Sidebarr = () => {
                   Mr Cat
                 </Typography>
                 <Typography variant="h5" color={colors.greenAccent[500]}>
-                  VP Funny Admin
+                  VR Serious Admin
                 </Typography>
               </Box>
             </Box>

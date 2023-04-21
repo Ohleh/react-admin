@@ -1,13 +1,13 @@
 {
-  "main.css": "/react-admin/static/css/main.86e75280.chunk.css",
-  "main.js": "/react-admin/static/js/main.86e13a0b.chunk.js",
-  "main.js.map": "/react-admin/static/js/main.86e13a0b.chunk.js.map",
-  "static/js/1.d6e15427.chunk.js": "/react-admin/static/js/1.d6e15427.chunk.js",
-  "static/js/1.d6e15427.chunk.js.map": "/react-admin/static/js/1.d6e15427.chunk.js.map",
+  "main.css": "/react-admin/static/css/main.23946553.chunk.css",
+  "main.js": "/react-admin/static/js/main.047da4a8.chunk.js",
+  "main.js.map": "/react-admin/static/js/main.047da4a8.chunk.js.map",
+  "static/js/1.65ed40a2.chunk.js": "/react-admin/static/js/1.65ed40a2.chunk.js",
+  "static/js/1.65ed40a2.chunk.js.map": "/react-admin/static/js/1.65ed40a2.chunk.js.map",
   "runtime~main.js": "/react-admin/static/js/runtime~main.417c3b66.js",
   "runtime~main.js.map": "/react-admin/static/js/runtime~main.417c3b66.js.map",
-  "static/css/main.86e75280.chunk.css.map": "/react-admin/static/css/main.86e75280.chunk.css.map",
+  "static/css/main.23946553.chunk.css.map": "/react-admin/static/css/main.23946553.chunk.css.map",
   "index.html": "/react-admin/index.html",
-  "precache-manifest.7298f51cb0880d26efad79c5a992da70.js": "/react-admin/precache-manifest.7298f51cb0880d26efad79c5a992da70.js",
+  "precache-manifest.b664fa5235a71c9b109aeb98362cf693.js": "/react-admin/precache-manifest.b664fa5235a71c9b109aeb98362cf693.js",
   "service-worker.js": "/react-admin/service-worker.js"
 }

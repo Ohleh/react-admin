@@ -29,18 +29,18 @@ const Item = ({ title, to, icon, selected, setSelected }) => {
       style={{ color: colors.grey[100] }}
       onClick={() => setSelected(title)}
       icon={icon}
+      component={<Link to={to} />}
     >
       <Typography>{title}</Typography>
-      <Link to={to} />
     </MenuItem>
   );
 };
 
 const Sidebarr = () => {
-  const thene = useTheme();
-  const colors = tokens(thene.palette.mode);
-  const [selected, setSelected] = useState("Dashboard");
+  const theme = useTheme();
+  const colors = tokens(theme.palette.mode);
   const { collapseSidebar } = useProSidebar();
+  const [selected, setSelected] = useState("Dashboard");
   return (
     <Box
       sx={{

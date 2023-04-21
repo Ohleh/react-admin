@@ -111,7 +111,7 @@ const Sidebarr = () => {
             <Box mb="25px">
               <Box display="flex" justifyContent="center" alignItems="center">
                 <img
-                  alt="user-image"
+                  alt="user-avatar"
                   width="100px"
                   height="100px"
                   src={"../../assets/user-img.jpg"}

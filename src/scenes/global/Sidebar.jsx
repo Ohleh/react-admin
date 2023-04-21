@@ -39,7 +39,7 @@ const Item = ({ title, to, icon, selected, setSelected }) => {
 const Sidebarr = () => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
-  const { collapseSidebar } = useProSidebar();
+  const { collapseSidebar, collapsed } = useProSidebar();
   const [selected, setSelected] = useState("Dashboard");
   return (
     <Box
@@ -75,7 +75,7 @@ const Sidebarr = () => {
           {/* LOGO & MENU ICONS */}
           <MenuItem
             onClick={() => collapseSidebar()}
-            // icon={collapseSidebar ? <MenuOutlinedIcon /> : undefined}
+            icon={collapsed ? <MenuOutlinedIcon /> : undefined} // show a humburger whet it is collapsed
             style={{
               margin: "10px 0 20px 0",
               color: colors.grey[100],
@@ -86,12 +86,12 @@ const Sidebarr = () => {
                 display="flex"
                 justifyContent="space-between"
                 alignItems="center"
-                ml="15"
+                ml="15px"
               >
                 <Typography variant="h3" color={colors.grey[100]}>
                   admin
                 </Typography>
-                <IconButton onClick={() => collapseSidebar()}>
+                <IconButton>
                   <MenuOutlinedIcon />
                 </IconButton>
               </Box>

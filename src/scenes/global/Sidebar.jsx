@@ -73,9 +73,9 @@ const Sidebarr = () => {
         //   color: "#868dfb !important",
         //   backgroundColor: "transparent !important",
         // },
-        //   "& .pro-menu-item.active": {
-        //     color: "#6870fa !important",
-        //   },
+        "& .ps-menu-button.ps-active": {
+          color: "#6870fa !important",
+        },
       }}
     >
       <Sidebar>

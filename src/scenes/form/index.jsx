@@ -36,6 +36,7 @@ const Form = () => {
 
   const handleFormSubmit = (values) => {
     console.log(values);
+    alert(`New User ${values.firstName} Created`);
   };
   return (
     <Box m="20px">

@@ -33,6 +33,11 @@ const PieChart = () => {
             },
           },
         },
+        labels: {
+          text: {
+            fill: colors.grey[500],
+          },
+        },
         legends: {
           text: {
             fill: colors.grey[100],
@@ -45,19 +50,18 @@ const PieChart = () => {
       cornerRadius={3}
       activeOuterRadiusOffset={8}
       borderWidth={1}
-      //   borderColor={{
-      //     // from: "color",
-      //     // modifiers: [["darker", 0.2]],
-      //   }}
+      // border={{
+      //   from: "color",
+      //   modifiers: [["darker", 0.2]],
+      // }}
       arcLinkLabelsSkipAngle={10}
       arcLinkLabelsTextColor={colors.grey[100]}
       arcLinkLabelsThickness={2}
       arcLinkLabelsColor={{ from: "color" }}
-      enableArcLabels={false}
       arcLabelsSkipAngle={10}
       arcLabelsTextColor={{
         from: "color",
-        modifiers: [["darker", 2]],
+        modifiers: [["darker", "2"]],
       }}
       defs={[
         {

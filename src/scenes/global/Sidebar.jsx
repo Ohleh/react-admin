@@ -114,7 +114,7 @@ const Sidebarr = () => {
                   alt="user-avatar"
                   width="100px"
                   height="100px"
-                  src={`../../assets/user-img.jpg`}
+                  src={`%PUBLIC_URL%/assets/user-img.jpg`}
                   style={{ cursor: "pointer", borderRadius: "50%" }}
                 />
               </Box>

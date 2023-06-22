@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import imageAvatar from "../../img/user-img.jpg";
 
 import { Sidebar, Menu, MenuItem, useProSidebar } from "react-pro-sidebar";
 // import "react-pro-sidebar/dist/css/styles.css";
@@ -114,7 +115,7 @@ const Sidebarr = () => {
                   alt="user-avatar"
                   width="100px"
                   height="100px"
-                  src={`%PUBLIC_URL%/assets/user-img.jpg`}
+                  src={imageAvatar}
                   style={{ cursor: "pointer", borderRadius: "50%" }}
                 />
               </Box>
